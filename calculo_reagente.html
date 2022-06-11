@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<h1>Cálculo de reagentes - ETE</h1>
+
+    <label>Soda Caústica 50%:</label>
+    <input id="txt1" type="text"/>
+    <label>Doseamento: </label>
+    <input id="txt2" type="text"/>
+    <button id="multiplicar" onclick="soda()">Calcular</button>
+
+    <br><br> 
+
+    <label>PAC:</label>
+    <input id="txt3" type="text"/>
+    <label>Doseamento: </label>
+    <input id="txt4" type="text"/>
+    <button id="multiplicar" onclick="PAC()">Calcular</button>
+
+<br><br> 
+
+    <label>Polímero:</label>
+    <input id="txt5" type="text"/>
+    <label>Doseamento: </label>
+    <input id="txt6" type="text"/>
+    <button id="multiplicar" onclick="polimero()">Calcular</button>
+
+    <br><br> 
+
+    <label>Peróxido de Hidrogênio 50%:</label>
+    <input id="txt7" type="text"/>
+    <label>Doseamento: </label>
+    <input id="txt8" type="text"/>
+    <button id="multiplicar" onclick="peroxido()">Calcular</button>
+
+<script >
+
+	function pulaLinha () {
+	
+	document.write("<br><br>")
+
+}
+
+ function mostra (frase) {
+
+    document.write (frase);
+    pulaLinha ();
+
+
+ }
+
+ function soda(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = s1*s2;
+      alert("O total de soda consumido foi " + s3+ " L.");
+}
+
+
+ function PAC(){
+        var s1 = document.getElementById("txt3").value;
+        var s2 = document.getElementById("txt4").value;
+        var s3 = s1*s2;
+      alert("O total de PAC consumido foi " + s3+ " L.");
+}
+
+function polimero(){
+        var s1 = document.getElementById("txt5").value;
+        var s2 = document.getElementById("txt6").value;
+        var s3 = s1*s2;
+      alert("O total de Polímero consumido foi " + s3+ " L.");
+}
+
+function peroxido(){
+        var s1 = document.getElementById("txt7").value;
+        var s2 = document.getElementById("txt8").value;
+        var s3 = s1*s2;
+      alert("O total de Peróxido de hdrogênio 50% consumido foi " + s3+ " L.");
+}
+</script>
